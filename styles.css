@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.root {
+    display: flex;
+    height: 100vh;
+}
+
+.root > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+#DnDContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    width: 640px;
+    height: 360px;
+    border: 4px dashed dodgerblue;
+    border-radius: 8px;
+    transition: border 400ms;
+}
+
+#DnDContainer:hover {
+    border-color: blue;
+}
+
+button {
+    position: relative;
+    cursor: pointer;
+}
